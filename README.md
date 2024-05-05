@@ -70,3 +70,33 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 
 This README structure provides a clear guide for users to understand your project, how to set it up, and how to test it. Make sure to customize the content to fit your specific project requirements.
+
+
+## Running Tests
+To run the test suite for the application, follow these steps:
+
+1. **Activate the virtual environment** (if you're using one):
+    ```shell
+    source venv/bin/activate
+    ```
+
+2. **Ensure that you have all the dependencies installed**:
+    Make sure you've run the installation command:
+    ```shell
+    pip install -r requirements.txt
+    ```
+
+3. **Run the test suite**:
+    Use the following command in the root of the project directory:
+    ```shell
+    python manage.py test
+    ```
+
+    This command runs the Django test suite, which includes the tests in the `vendor_app` app as well as any other apps you've included.
+
+4. **Review the output**:
+    Check the console output for any test failures or errors. If all tests pass, you should see a message indicating that the tests completed successfully.
+
+If you encounter any errors, review the test cases and application code to identify and resolve the issues.
+
+For more information on writing and running tests in Django, see the [Django documentation](https://docs.djangoproject.com/en/stable/topics/testing/).
